@@ -31,16 +31,22 @@ the model files themselves.
 Data and EDA notebook:
 
   data/
-    EDA_qa_data.ipynb 
+  
+      EDA_qa_data.ipynb 
 
 Model training notebooks:
 
   notebooks/
-    CrossAttention_siameseRoBERTa.ipynb
-    RoBERTa_Net.ipynb
-    siamiseNet.ipynb
-    BERT_Multi_head.ipynb
-    simple_regressor.ipynb
+  
+      CrossAttention_siameseRoBERTa.ipynb
+    
+      RoBERTa_Net.ipynb
+    
+      siamiseNet.ipynb
+    
+      BERT_Multi_head.ipynb
+    
+      simple_regressor.ipynb
   
 Run Inference:
 
@@ -49,6 +55,7 @@ Run Inference:
 Model files (.pth):
 
   RoBERTa_5epochs.pth 
+  
   Siamese_CrossAttention_RoBERTa_10epochs.pth
   
 ---
@@ -57,12 +64,12 @@ Model files (.pth):
 
 We iteratively improved our models and achieved low loss and strong correlations with human ratings:
 
-Best Loss (MSE): ~0.04
+* Best Loss (MSE): ~0.04
 
-High Pearson & Spearman correlations(between prediction and real rating for metric) on most metrics(most 
+* High Pearson & Spearman correlations(between prediction and real rating for metric) on most metrics(most 
 arround 0.5 and maximum of 0.75)
 
-Inference examples make sense, especially with the Siamese + Cross-Attention model
+* Inference examples make sense, especially with the Siamese + Cross-Attention model
 
 ---
 
@@ -70,37 +77,37 @@ Inference examples make sense, especially with the Siamese + Cross-Attention mod
 
 We explored several architectures step by step:
 
-1. Simple BERT regressor – single output layer predicting 30 metrics directly.
+1. __Simple BERT regressor – single output layer predicting 30 metrics directly.__
 
 ✅ Low loss
 
 ❌ Extremely low correlation with ground truth
 
-2. BERT multi-head regressor (30 outputs)
+2. __BERT multi-head regressor (30 outputs)__
    
 ✅ Loss ~0.02 (on train only!)
 
 ❌ Fine correlations in some metrics but many of them low!
 
-3. Siamese BERT – question and answer encoded separately but with shared weights
+3. __Siamese BERT – question and answer encoded separately but with shared weights__
    
 ✅ Good correlations
 
 ⚠ Inference examples were less convincing
 
-4. Metric grouping (from 30 → 9)
+4. __Metric grouping (from 30 → 9)__
    
 Grouped related metrics to simplify the learning target (e.g., answer helpfulness, question quality)
 
 ✅ Improved generalization and interpretability
 
-5. Roberta-based Siamese model
+5. __Roberta-based Siamese model__
    
 ✅ Lower loss and better correlations
 
 ✅ More robust inference
 
-6. Siamese + Cross-Attention model
+6. __Siamese + Cross-Attention model__
 
 Cross-attention lets question tokens attend to answer tokens (q2a, or a2q)
 
