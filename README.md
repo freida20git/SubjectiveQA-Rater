@@ -29,7 +29,7 @@ and consistent subjective content evaluation.
 as we explored many models, the training notebooks of the different models are included as well as some of 
 the model files themselves.
 
-__Data and EDA notebook:__
+__Exploring data distribution:__
 
   data/
 
