@@ -45,19 +45,19 @@ Model training notebooks:
     
     siamiseNet.ipynb
     
-      BERT_Multi_head.ipynb
+    BERT_Multi_head.ipynb
     
-      simple_regressor.ipynb
+    simple_regressor.ipynb
   
 Run Inference:
 
-  Inference_QArater.ipynb
+    Inference_QArater.ipynb
 
 Model files (.pth):
 
-  RoBERTa_5epochs.pth 
+    RoBERTa_5epochs.pth 
   
-  Siamese_CrossAttention_RoBERTa_10epochs.pth
+    Siamese_CrossAttention_RoBERTa_10epochs.pth
   
 ---
 
