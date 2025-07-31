@@ -29,13 +29,13 @@ and consistent subjective content evaluation.
 as we explored many models, the training notebooks of the different models are included as well as some of 
 the model files themselves.
 
-Data and EDA notebook:
+__Data and EDA notebook:__
 
   data/
 
     EDA_qa_data.ipynb 
 
-Model training notebooks:
+__Model training notebooks:__
 
   notebooks/
   
@@ -49,11 +49,11 @@ Model training notebooks:
     
     simple_regressor.ipynb
   
-Run Inference:
+__Run Inference:__
 
     Inference_QArater.ipynb
 
-Model files (.pth):
+__Model files (.pth):__
 
     RoBERTa_5epochs.pth 
   
