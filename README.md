@@ -32,18 +32,18 @@ the model files themselves.
 Data and EDA notebook:
 
   data/
-  
-      EDA_qa_data.ipynb 
+
+    EDA_qa_data.ipynb 
 
 Model training notebooks:
 
   notebooks/
   
-      CrossAttention_siameseRoBERTa.ipynb
+    CrossAttention_siameseRoBERTa.ipynb
     
-      RoBERTa_Net.ipynb
+    RoBERTa_Net.ipynb
     
-      siamiseNet.ipynb
+    siamiseNet.ipynb
     
       BERT_Multi_head.ipynb
     
