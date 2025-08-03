@@ -47,7 +47,7 @@ __Model training notebooks:__
     
     BERT_Multi_head.ipynb
     
-    simple_regressor.ipynb
+    simple_BERT_regressor.ipynb
   
 __Run Inference:__
 
